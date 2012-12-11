@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
- * User: Lenovo-lb
+ * User: asp
  * Date: 12-12-4
  * Time: 下午5:06
  * To change this template use File | Settings | File Templates.
@@ -18,7 +18,7 @@ public class MaxAvailableParkStrategy implements ParkStrategy {
                 maxsizeIndex=i;
         }
         if(parks.get(maxsizeIndex).getAvailableNum()==0)
-            throw new ParkFullException("所有的停车场都已满");
+            throw new ParkFullException("所有的停车场都已停满！");
         return   parks.get(maxsizeIndex);
     }
 }

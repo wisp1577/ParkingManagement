@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
- * User: Lenovo-lb
+ * User: asp
  * Date: 12-12-4
  * Time: 下午5:11
  * To change this template use File | Settings | File Templates.
@@ -22,6 +22,11 @@ public class ParkBoy {
         return parkStrategy.getAvailablePark(parkPlaces).parkCar(car);
     }
 
+    public List<ParkPlaceExtInfo> getParkPlaces()
+    {
+        return this.parkPlaces;
+    }
+
     public Integer getAvailableNum() {
         int availableNum=0;
         for(ParkPlace parkPlace:parkPlaces){
@@ -29,6 +34,15 @@ public class ParkBoy {
         }
         return availableNum;
     }
+
+    public Integer getTotalCapacity() {
+        int totalCapacity=0;
+        for(ParkPlaceExtInfo parkPlace:parkPlaces){
+            totalCapacity+=parkPlace.getTotalCapacity();
+        }
+        return totalCapacity;
+    }
+
     public Car fetch(Ticket ticket) {
         Car fetchedCar=null;
         for(ParkPlace parkPlace:parkPlaces){
