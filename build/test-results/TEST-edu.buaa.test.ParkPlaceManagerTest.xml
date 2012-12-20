@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="WWW-EA6D797D6EE" name="edu.buaa.test.ParkPlaceManagerTest" tests="6" time="0.0" timestamp="2012-12-20T11:15:15">
+  <properties />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="parkManager_include_self_sub_parkBoy_ShouldParkCar" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="parkManager_include_self_sub_parkBoy_FetchParkCar" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="should_fetch_Sucess_when_park_is_empty" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="should_fetch_Sucess_when_park_is_notempty" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="should_throwParkFullException_if_park_when_park_is_full" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkPlaceManagerTest" name="parkManager_manyParkPlace_ShouldParkCar" time="0.0" />
+  <system-out><![CDATA[1、9:9
+2、19:19
+3、29:29
+4、39:39
+29:29
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
